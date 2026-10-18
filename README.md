@@ -1,7 +1,7 @@
 <h1 align="center">👋 Hi, I'm Dinesh Chahar</h1>
 
 <p align="center">
-  <b>Backend Engineer</b> · Java · Spring Boot · Python<br>
+  <b>Backend Engineer</b> · Java · Spring Boot · Python · AI Systems<br>
   I build systems that stay correct when load, retries and partial failure all show up at once.
 </p>
 
@@ -15,11 +15,11 @@
 
 ### 🧭 About
 
-I work mostly in **Java and Spring Boot**, and I'm drawn to the parts of a system that are easy to get subtly wrong — caching, messaging, idempotency, billing, consistency under concurrency.
+I build backends in **☕ Java and Spring Boot**, and **🐍 Python** services and AI systems with FastAPI. Across both, I'm drawn to the parts of a system that are easy to get subtly wrong — caching, messaging, idempotency, billing, consistency under concurrency.
 
-Most of what's below was built from first principles rather than assembled from a tutorial: a cache with its own wire protocol, a link service that has to bill every single visit, an analytics agent that refuses to answer when the data can't support it. Every README explains the reasoning and what got traded away — including the decisions that didn't pan out.
+🤖 On the **AI side** my interest isn't prompt-wrangling, it's making a non-deterministic component trustworthy enough to ship: closed output schemas per agent, verification enforced in code rather than in instructions to the model, grounding checks that kill invented numbers before a user sees them, and an eval harness that tells me when a change made things worse. Multi-agent orchestration with **LangGraph**, retrieval and analytics over **DuckDB**, streaming over **SSE** — built with the same discipline I'd apply to a payments service.
 
-More recently I've been building **AI systems with the same discipline I'd apply to a payments service**: closed output schemas, verification in code rather than in prompts, and an eval harness that tells me when a change made things worse.
+🔨 Most of what's below was built from first principles rather than assembled from a tutorial: a cache with its own wire protocol, a link service that has to bill every single visit, an analytics agent that refuses to answer when the data can't support it. Every README explains the reasoning and what got traded away — including the decisions that didn't pan out.
 
 ---
 
@@ -51,7 +51,7 @@ Spring Boot service that publishes and consumes notification events over Kafka a
 
 ## 🤖 AI engineering
 
-My interest here isn't prompt-wrangling — it's making a non-deterministic component trustworthy enough to put in front of users. Both projects below enforce correctness **in code**, not in instructions to the model.
+Two agent systems, both built so the model can't fabricate its way past the guardrails.
 
 ### 🧠 [NYC 311 Analytics Agent](https://github.com/chahario/Text2SQL-AI-Agent)
 
